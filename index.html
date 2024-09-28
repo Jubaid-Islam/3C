@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h5>Jubaid</h5>
+        <h1>Number System Converter</h1>
+        <div class="input-group">
+            <label for="decimal">Decimal:</label>
+            <input type="text" id="decimal" placeholder="Enter ">
+            <button class="how-btn" onclick="showExplanation('decimal')">How?</button>
+        </div>
+        
+        <div class="input-group">
+            <label for="binary">Binary:</label>
+            <input type="text" id="binary" placeholder="Enter ">
+            <button class="how-btn" onclick="showExplanation('binary')">How?</button>
+        </div>
+        
+        <div class="input-group">
+            <label for="octal">Octal:</label>
+            <input type="text" id="octal" placeholder="Enter ">
+            <button class="how-btn" onclick="showExplanation('octal')">How?</button>
+        </div>
+        
+        <div class="input-group">
+            <label for="hexadecimal">Hexadecimal:</label>
+            <input type="text" id="hexadecimal" placeholder="Enter ">
+            <button class="how-btn" onclick="showExplanation('hexadecimal')">How?</button>
+        </div>
+
+        <button id="clear">Clear</button>
+    </div>
+
+    <!-- Modal for "How?" Explanation -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="hideModal()">&times;</span>
+            <h2>How It Works</h2>
+            <p id="explanation-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
